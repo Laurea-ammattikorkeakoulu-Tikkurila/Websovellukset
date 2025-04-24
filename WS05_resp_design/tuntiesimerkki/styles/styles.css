@@ -196,16 +196,3 @@ footer {
   font-size: 0.9rem; /* Slightly smaller font size */
   border-top: 3px solid #007BFF; /* Optional: Add a top border for separation */
 }
-
-footer p {
-  margin: 0; /* Remove default margin */
-}
-
-footer a {
-  color: #007BFF; /* Optional: Add a link color */
-  text-decoration: none; /* Remove underline from links */
-}
-
-footer a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
