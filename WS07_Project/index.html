@@ -15,52 +15,125 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <header class="p-3 mb-3 border-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- Navigation bar with a logo, collapsible menu, and links -->
+            <div class="container-fluid">
 
-            <img src="./images/KovisLogo.webp" alt="Squash logo" style="width: 50px;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./kuva.html">Kuvakaruselli</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./jako.html">Sivujako</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./video.html">Videot</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Muita linkkejä
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./contact.html">Ota yhteyttä</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- Logo for the navigation bar -->
+                <img src="./images/KovisLogo.webp" alt="Squash logo" style="width: 50px;">
+
+                <!-- Button to toggle the navigation menu on smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible navigation menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- Navigation links -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Etusivu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./kuva.html">Kuvakaruselli</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./jako.html">Sivujako</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./video.html">Videot</a>
+                        </li>
+                        <!-- Dropdown menu for additional links -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Muita linkkejä
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./contact.html">Ota yhteyttä</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right-aligned links for Register and Login -->
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Register</a>
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-item nav-link">Register</a>
-                <a href="#" class="nav-item nav-link">Login</a>
+    <div class="container">
+
+        <div class="p-5 my-4 bg-body-secondary rounded-3">
+            <h1>Squash lyhyesti</h1>
+            <p class="lead">Squash tai puhekielessä kössi, on pallopeli, jota pelataan yleensä
+                kaksinpelinä. Peli syntyi
+                Englannissa 1900-luvun alussa. Squash on vauhdikas mailapeli, jota pelatessa kunto kohoaa, koordinaatio-
+                ja reaktiokyky vahvistuu ja hapenotto paranee. Sitä harrastetaan tehokkaana liikuntamuotona kuin myös
+                pelataan erittäin haastavana kilpapelinä.</p>
+            <p><a href="https://www.wikihow.com/Play-Squash" target="_blank" class="btn btn-success btn-lg">Aloita
+                    harrastus</a></p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 bg-body-secondary rounded-3 me-0">
+                <h2>Säännöt</h2>
+                <p>Pelikenttä koostuu lattiasta, etuseinästä, sivuseinistä, takaseinästä ja katosta eli huoneesta, jonka
+                    melkein koko tilaa käytetään pelialueena. Pallo saa pelin aikana osua kaikkiin seiniin rajojen
+                    sisäpuolelle. Pallo ei saa osua pelialueen ulkopuolelle.</p>
+                <p><a href="https://www.squash.fi/Squashin+saannot" target="_blank" class="btn btn-success">Lue
+                        lisää &raquo;</a></p>
+            </div>
+            <div class="col-md-4 bg-body-secondary rounded-3 me-0 ">
+                <h2>Terveysvaikutukset</h2>
+                <p>Squashia pidetään erittäin monipuolisena, urheilullisena ja terveyttä edistävänä lajina. Squash
+                    parantaa koordinaatiota, motoriikkaa, nopeutta ja tasapainoa. Squash on ihanteellinen tapa alentaa
+                    stressitasoa ja oppia keskittymään hetkeen.</p>
+                <p><a href="https://www.squash.fi/Squash+paras+urheilulaji+terveena+pysymiseen" target="_blank"
+                        class="btn btn-success">Lue
+                        lisää &raquo;</a></p>
+            </div>
+            <div class="col-md-4 bg-body-secondary rounded-3 me-0">
+                <h2>Seurat</h2>
+                <p>Kun haluat aloittaa harrastuksen, etsi alkuksi lähin halli, jossa voit aloittaa pelaamisen. Kaverin
+                    kanssa pelaamisen ja vakavamman kilpailemisen välissä
+                    squashhalleilla ympäri maata toimii hallisarjoja tai boxliigoja. </p>
+                <p><a href="https://www.squash.fi/seurat" target="_blank" class="btn btn-success">Lue lisää &raquo;</a>
+                </p>
             </div>
         </div>
-    </nav>
+        <div class="mx-auto p-2" style="width: 800px;">
 
+            <img src="https://www.worldsquash.org/wp-content/uploads/2024/10/0I8A3955-780x470.jpg" class="rounded-3"
+                alt="Kuvalinkki rikki...">
 
+        </div>
+
+        <footer>
+            <!-- Footer section containing copyright information and links to Terms of Use and Privacy Policy -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2025 Jari Kovis</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-light">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
-</html
+</html>

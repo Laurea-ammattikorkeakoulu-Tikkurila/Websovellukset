@@ -15,50 +15,139 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <header class="p-3 mb-3 border-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <!-- Navigation bar with a logo, collapsible menu, and links -->
+            <div class="container-fluid">
 
-            <img src="./images/KovisLogo.webp" alt="Squash logo" style="width: 50px;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link"  href="index.html">Etusivu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./kuva.html">Kuvakaruselli</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./jako.html">Sivujako</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./video.html">Videot</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Muita linkkejä
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./contact.html">Ota yhteyttä</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- Logo for the navigation bar -->
+                <img src="./images/KovisLogo.webp" alt="Squash logo" style="width: 50px;">
+
+                <!-- Button to toggle the navigation menu on smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible navigation menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- Navigation links -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Etusivu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./kuva.html">Kuvakaruselli</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./jako.html">Sivujako</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./video.html">Videot</a>
+                        </li>
+                        <!-- Dropdown menu for additional links -->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Muita linkkejä
+                            </a>
+                            <ul class="dropdown-menu active">
+                                <li><a class="dropdown-item" href="./contact.html">Ota yhteyttä</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right-aligned links for Register and Login -->
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link">Register</a>
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-item nav-link">Register</a>
-                <a href="#" class="nav-item nav-link">Login</a>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="my-4">Mitäpä tänne laittais...</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="col-md-12">
+                        <h3 class="my-4">Tilaa uutiskirje</h3>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Etunimi</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Sukunimi</label>
+                            <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Katuosoite</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="esim. Ratatie 22">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Maakunta</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="esim. Uusimaa">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Kaupunki</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Postinumero</label>
+                            <input type="number" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Tilaa uutiskirje
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Lähetä tiedot</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-md-12">
+                        <h3 class="my-4">Otsikko</h3>
+                    </div>
+                    <p class="p-2">... lisää sponsorit tänne</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-md-12">
+                        <h3 class="my-4">Otsikko</h3>
+                    </div>
+                    <p class="p-2">... lisää jotain sisältöä tänne</p>
+                </div>
             </div>
         </div>
-    </nav>
 
-    
-
-
+        <footer>
+            <!-- Footer section containing copyright information and links to Terms of Use and Privacy Policy -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2025 Jari Kovis</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-light">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
